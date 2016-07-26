@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+}
+
+.main {
+  background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  min-width: 1200px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  font-size: 0;
+}
+
+.ryu {
+    width: 659px;
+    height: 494px;
+    display: inline-block;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+  width: 659px;
+  height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool {
+  display: none;
+} 
+
+.ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+  background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
+
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+//  this keeps the image from repeating if the div they are in
+//  is bigger than the image
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+  background-repeat: no-repeat;
+}
+
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 167px;
+  left: 520px;
+  float: left;
+  
+}
+
+.textContainer {
+  background-color: white;
+  left: 600px;
+  height: 494px;
+  width: 480px;
+  float: right;
+  padding-left: 60px;
+  display: inline-block;
+}
+
+.clickRyuText {
+  margin-top: 75px;
+  font-size: 30px;
+  width: 199px;
+  margin-left: 75px;
+ /*margin-right: auto;*/
+}
+
+.holdXKeyText {
+  font-size: 30px;
+  width: 199px;
+  margin-left: 75px;
+  /*margin-right: auto;*/
+}
+
+* {
+    /*outline: red 1px solid; */
+}
+
